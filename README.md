@@ -1,4 +1,4 @@
-#Google Sheets SolarEdge Wiki
+#Google Sheets SolarEdge
 A collection of Google Sheets scripts for interacting with the **SolarEdge** API
 
 * SolarEdge Monitoring Portal Login: [https://monitoring.solaredge.com/solaredge-web/p/login](https://monitoring.solaredge.com/solaredge-web/p/login)
