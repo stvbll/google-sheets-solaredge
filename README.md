@@ -30,9 +30,9 @@ There are four script files that you can use.  You can choose to combine them as
 ###Script File References
 Each script has some hard-coding in it that you can change at will
 * Names of sheets are hardcoded in lines similar to
-  var sheetSiteInfo = ss.getSheetByName("details");
+  'var sheetSiteInfo = ss.getSheetByName("details");'
 * Location lookups for **API Key**, **Site ID**, and **Inverter Serial**
-   var apiKey = sheetSiteInfo.getRange("B7").getValue();
+   'var apiKey = sheetSiteInfo.getRange("B7").getValue();'
 
 ##Usage
 1. Open a spreadsheet in Google Sheets
