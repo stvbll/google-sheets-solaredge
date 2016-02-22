@@ -40,9 +40,12 @@ Each script has some hard-coding in it that you can change at will
 3. On the **details** sheet, enter your **API Key** into **B7**
 4. On the **details** sheet, enter your **Site ID** into **B2**
 5. On the **details** sheet, enter your *Inverter Serial* into **B8**
-4. Click **Tools** > **Script Editor***
-5. Create four scripts **month.gs**, **day.gs**, **inverter.gs**, and **details.gs**
-6. Paste the code from this repository into the corresponding _example.gs_ sheet script like **monthly.gs**
-7. Click **Resources** > **....Triggers** in the **Script Editor** and set the frequency you'd like each to be triggered
+
+![details](https://drive.google.com/uc?id=0B67YKsDXbXJ0QjBoMnJsTEV6LWs)
+
+6. Click **Tools** > **Script Editor***
+7. Create four scripts **month.gs**, **day.gs**, **inverter.gs**, and **details.gs**
+8. Paste the code from this repository into the corresponding _example.gs_ sheet script like **monthly.gs**
+9. Click **Resources** > **....Triggers** in the **Script Editor** and set the frequency you'd like each to be triggered
 
 **Note** that there is a limit on the number of calls you can make in a day as a best practice.  Please be a mindful consumer :)
