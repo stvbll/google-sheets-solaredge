@@ -41,7 +41,7 @@ Each script has some hard-coding in it that you can change at will
 4. On the **details** sheet, enter your **Site ID** into **B2**
 5. On the **details** sheet, enter your *Inverter Serial* into **B8**
 
-<img src="https://drive.google.com/uc?id=0B67YKsDXbXJ0QjBoMnJsTEV6LWs" width="100">
+<img src="https://drive.google.com/uc?id=0B67YKsDXbXJ0QjBoMnJsTEV6LWs" width="150">
 
 6. Click **Tools** > **Script Editor***
 7. Create four scripts **month.gs**, **day.gs**, **inverter.gs**, and **details.gs**
