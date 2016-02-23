@@ -37,11 +37,7 @@ function getInverter()
   //Logger.log(inverter.length);
   
   //clear the cells before writing
-  var rangesToClear = ["A2:C1000"];
-  for (var i=0; i<rangesToClear.length; i++)
-  { 
-    sheet.getRange(rangesToClear[i]).clearContent();
-  }
+  sheet.getRange("A2:C1000").clearContent();
   
   //During early morning hours there won't be any data
   if (inverter.length != 0)
