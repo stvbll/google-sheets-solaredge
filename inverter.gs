@@ -38,13 +38,12 @@ function getInverter()
   
   //clear the cells before writing
   var rangesToClear = ["A2:C1000"];
-  
-  
   for (var i=0; i<rangesToClear.length; i++)
   { 
     sheet.getRange(rangesToClear[i]).clearContent();
   }
   
+  //During early morning hours there won't be any data
   if (inverter.length != 0)
   {
     var arrayRange = sheet.getRange("A2:C"+((inverter.length)+1));
