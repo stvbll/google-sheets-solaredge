@@ -82,7 +82,7 @@ function getDayEnergy()
     //Logger.log(days)
     //Logger.log(days.length);
   
-  sheet.getRange("A2:B31").clearContent()
+  sheet.getRange("A2:B33").clearContent()
   var arrayRange = sheet.getRange("A2:B"+((days.length)+1));
   arrayRange.setValues(days);
   var dateRange = sheet.getRange("A2:A"+((days.length)+1));
