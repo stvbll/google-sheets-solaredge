@@ -22,10 +22,11 @@ You can request a private API key from SolarEdge or your Solar installer on beha
 
 ###Script Files
 There are four script files that you can use.  You can choose to combine them as they are separate for each function but redundant in code in many places between them.
-* **month.gs** - Fetches the total kWh for the current month
-* **day.gs** - Fetches the total kWh for each day of the current month
+* **month.gs** - Fetches the total kWh for the current month (no longer used, but available if you want to use it)
+* **day.gs** - Fetches the total kWh for each day of the current month (no longer used, but available if you want to use it)
 * **details.gs** - Fetches site specific information like panel type and peak power information
 * **inverter.gs** - Fetches the kW and temperature from the inverter for the given day
+* **overview.gs** - Fetches total kWh for lifetime, year, month, and day (replaces month.gs and day.gs)
  
 ###Script File References
 Each script has some hard-coding in it that you can change at will
@@ -44,7 +45,7 @@ Each script has some hard-coding in it that you can change at will
 <img src="https://drive.google.com/uc?id=0B67YKsDXbXJ0QjBoMnJsTEV6LWs" width="150">
 
 6. Click **Tools** > **Script Editor***
-7. Create four scripts **month.gs**, **day.gs**, **inverter.gs**, and **details.gs**
+7. Create three scripts **overview.gs**, **inverter.gs**, and **details.gs**
 8. Paste the code from this repository into the corresponding _example.gs_ sheet script like **monthly.gs**
 9. Click **Resources** > **....Triggers** in the **Script Editor** and set the frequency you'd like each to be triggered
 
