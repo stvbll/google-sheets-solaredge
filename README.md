@@ -26,7 +26,7 @@ There are four script files that you can use.  You can choose to combine them as
 * **day.gs** - Fetches the total kWh for each day of the current month (no longer used, but available if you want to use it)
 * **details.gs** - Fetches site specific information like panel type and peak power information
 * **inverter.gs** - Fetches the kW and temperature from the inverter for the given day
-* **overview.gs** - Fetches total kWh for lifetime, year, month, and day (replaces month.gs and day.gs)
+* **overview.gs** - Fetches total kWh for lifetime, year, month, and day (replaces **month.gs** and **day.gs**)
  
 ###Script File References
 Each script has some hard-coding in it that you can change at will
