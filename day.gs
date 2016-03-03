@@ -32,10 +32,8 @@ function getDayEnergy()
     for(var i = 0; i < dateValues.length; i++)
     if (dateValues[i].getChild("value").getValue() != "null")
     {
-      {
-        day=[dateValues[i].getChild("date").getValue(),dateValues[i].getChild("value").getValue()]
-        days.push(day);
-      }
+      day=[dateValues[i].getChild("date").getValue(),dateValues[i].getChild("value").getValue()]
+      days.push(day);
     }
     //Logger.log(days)
     //Logger.log(days.length);
