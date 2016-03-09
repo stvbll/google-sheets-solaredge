@@ -29,10 +29,10 @@ function getOverview()
   //now parse it and get our values
   var artifact = XmlService.parse(response);
   var root = artifact.getRootElement();
-  var lifeTimeData = root.getChild('lifeTimeData').getChild('energy').getText()  //lifetime data
-  var lastYearData = root.getChild('lastYearData').getChild('energy').getText();  //current year data
-  var lastMonthData = root.getChild('lastMonthData').getChild('energy').getText();  //current month data
-  var lastDayData = [day,root.getChild('lastDayData').getChild('energy').getText()];  //current day data
+  var lifeTimeData = (root.getChild('lifeTimeData').getChild('energy').getText()/1000000);  //lifetime data in MWh
+  var lastYearData = (root.getChild('lastYearData').getChild('energy').getText()/1000);  //current year data in kWh
+  var lastMonthData = (root.getChild('lastMonthData').getChild('energy').getText()/1000);  //current month data in kWh
+  var lastDayData = [day,(root.getChild('lastDayData').getChild('energy').getText()/1000)];  //current day data in kWh
   //Logger.log(lastDayData);
   
   //if it's a new month, then dayRow should equal 2 and we should clear all the cells of prior values
@@ -41,8 +41,8 @@ function getOverview()
     sheetTest.getRange("A2:B32").clearContent()
   }
   
-  sheetDashboard.getRange("B1").setValue(root.getChild('lifeTimeData').getChild('energy').getText());  //write lifetime data to dashboard sheet
-  sheetDashboard.getRange("D1").setValue(root.getChild('lastYearData').getChild('energy').getText());  //write last year data to dashboard sheet
+  sheetDashboard.getRange("B1").setValue(lifeTimeData); //write lifetime data, in MWh, to dashboard sheet
+  sheetDashboard.getRange("D1").setValue(lastYearData); //write last year data, in kWh, to dashboard sheet
   sheetMonthData.getRange(1,monthDataColumn).setValue(year);  //write the current year in the column header on month_data sheet
   sheetMonthData.getRange(monthDataRow,monthDataColumn).setValue(lastMonthData);  //write last month data on month_data sheet
   sheetDayData.getRange("A"+dayRow+":"+"B"+dayRow).setValues([lastDayData]);  //write day data on on day_data sheet
