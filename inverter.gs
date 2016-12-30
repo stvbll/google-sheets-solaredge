@@ -30,7 +30,11 @@ function getInverter()
   Logger.log(timeValues);
   for(var i = 0; i < timeValues.length; i++)
   {
-    timeStats=[timeValues[i].getChild("date").getValue(),timeValues[i].getChild("totalActivePower").getValue(),timeValues[i].getChild("temperature").getValue() * 1.8 + 32]
+     // check if temperature exists, sometimes it's not set. 
+    if (timeValues[i].getChild("temperature") !== null) {
+      var temp = timeValues[i].getChild("temperature").getValue();
+    } else var temp = 0;    
+    timeStats=[timeValues[i].getChild("date").getValue(),timeValues[i].getChild("totalActivePower").getValue(),temp]
     inverter.push(timeStats);
   }
   //Logger.log(inverter)
