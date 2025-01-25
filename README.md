@@ -1,3 +1,5 @@
+#No Longer Maintained
+
 #Google Sheets SolarEdge
 A collection of Google Sheets scripts for interacting with the **SolarEdge** API
 
